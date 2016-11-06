@@ -1,7 +1,7 @@
 ﻿var OpenWeatherAppKey = "af5a509d5fbf88c997013127bb5ce8a8";
 
 function getWeatherWithZipCode() {
-    $('#test').text("test2");
+    //$('#test').text("test2");
     var zipcode = $('#zip-code-input').val();
     $('#error-msg').show();
     $('#error-msg').text("Error retrieving data. ");
