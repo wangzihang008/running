@@ -18,8 +18,8 @@
         var receivedElement = parentElement.querySelector('.received');
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');*/
-        $('#get-weather-btn').click(getWeatherWithZipCode());
-        //$('#test').text("test2");
+        $('#get-weather-btn').click(getWeatherWithZipCode);
+        
     };
 
     function onPause() {
