@@ -21,7 +21,7 @@ function getWeatherWithZipCode() {
 }
 
 function showWeatherData(results) {
-
+    $('#app-title').text("Android Weather");
     if (results.weather.length) {
 
         $('#error-msg').hide();
@@ -46,8 +46,8 @@ function showWeatherData(results) {
     }
 }
 
-function getWeatherWithGeoLocation() {
-
+/*function getWeatherWithGeoLocation() {
+    $('#app-title').text("Android Weather");
     navigator.geolocation.getCurrentPosition(onGetLocationSuccess, onGetLocationError,
       { enableHighAccuracy: true });
 
@@ -55,10 +55,8 @@ function getWeatherWithGeoLocation() {
     $('#error-msg').text('Determining your current location ...');
 
     $('#get-weather-btn').prop('disabled', true);
-}
+}*/
 function onGetLocationSuccess(position) {
-
-
 
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
